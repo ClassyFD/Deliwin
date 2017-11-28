@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "main": "server.js",
+  "homepage": "https://classyfd.github.io/Deliwin/",
   "dependencies": {
     "aphrodite": "^1.2.3",
     "axios": "^0.16.2",
@@ -10,6 +11,7 @@
     "cors": "^2.8.4",
     "express": "^4.15.4",
     "express-session": "^1.15.5",
+    "gh-pages": "^1.1.0",
     "google-maps-react": "^1.1.0",
     "gsap": "^1.20.2",
     "massive": "^4.0.0",
@@ -33,7 +35,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "deploy": "now --public --dotenv=.env.prod. -d"
+    "deploy": "npm run build&&gh-pages -d build"
   },
   "now": {
     "alias": "deliwin"
